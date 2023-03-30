@@ -1,12 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/style.css">
+
+    <!-- Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster+Two:ital@1&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- START OF NAVBAR -->
+    <div id="container" class="container-xxl position-relative p-0 mt-3 ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="tittle m-0"><i class="fa fa-utensils me-3"></i>Bhatti The Restro</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="menu.html" class="nav-item nav-link">Menu</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+            </div>
+        </nav>
+
+    </div>
+    <!-- END OF NAVBAR -->
+
+    <!-- START OF CROUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide rounded-3 h-50 carousel-fade w-100 h-75 d-block m-auto mt-3 mb-3"
+        data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                    class="d-block w-100 col-lg-6 text-center text-lg-end overflow-hidden" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>MO:MO</h5>
+                    <p>Very Famous Nepali Food.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1634864572865-1cf8ff8bd23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chowmein</h5>
+                    <p>Another very famous snacks/foods of Nepal.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://abbysplate.com/wp-content/uploads/2022/04/Dal-Bhat-Tarkari-1.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nepali National Food</h5>
+                    <p>Every Day go-to food.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- END OF CROUSEL -->
+
+    <!-- START OF BOOKING OPTION -->
+    <div class="container-xxl py-5 bg-dark hero-header mb-3 hero">
+        <div class="container my-5 py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
+                    <p class="text-white animated slideInLeft mb-4 pb-2">Our Motto is to serve our Typical Nepali Food
+                        in a very traditional and visually appealing way. We serve nepali food in very local way. </p>
+                    <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF BOOKING OPTION -->
+
+    <!-- Start Of Menu -->
+    <div class="container-xxl py- menu">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="section-title ff-secondary text-center  fw-normal team-font">Food Menu</h5>
+                <h1 class="mb-5 team-font">Most Popular Items</h1>
+            </div>
+            <div class="tab-class text-center ">
+                <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill"
+                            href="#tab-1">
+                            <i class="fa fa-coffee fa-2x text-primary"></i>
+                            <div class="ps-3">
+                                <small class="text-body menu-text">Popular</small>
+                                <h6 class="mt-n1 mb-0 menu-text">Breakfast</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                            <i class="fa fa-hamburger fa-2x text-primary"></i>
+                            <div class="ps-3">
+                                <small class="text-body menu-text">Special</small>
+                                <h6 class="mt-n1 mb-0 menu-text">Launch</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill"
+                            href="#tab-3">
+                            <i class="fa fa-utensils fa-2x text-primary"></i>
+                            <div class="ps-3">
+                                <small class="text-body menu-text">Lovely</small>
+                                <h6 class="mt-n1 mb-0 menu-text">Dinner</h6>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade p-0 active show">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Black Tea / Milk Tea</span>
+                                            <span class="text-primary">Rs20 / Rs 25 </span>
+                                        </h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Black Coffe / Milk Coffe</span>
+                                            <span class="text-primary">Rs 45 /Rs 90</span>
+                                        </h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Fresh - Juices</span>
+                                            <span class="text-primary">Rs 150</span>
+                                        </h5>
+                                        <small class="fst-italic">All Kind of seasonal fruit juice available</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1608019528071-c1a5c53c738c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Bread Toats</span>
+                                            <span class="text-primary">Rs 60</span>
+                                        </h5>
+                                        <small class="fst-italic"> Bread Toast With aside of
+                                            butter/jam/peanut-butter</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://c8.alamy.com/comp/2DDPKHA/nepalese-food-breakfast-with-sel-roti-and-chickpeas-ring-road-in-kathmandu-nepal-2DDPKHA.jpg"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Nepali Style Breakfast</span>
+                                            <span class="text-primary">Rs 150</span>
+                                        </h5>
+                                        <small class="fst-italic">Shell , Puri Tarkari </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="data:image/jpeg;base64,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"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Indian Style Breakfast</span>
+                                            <span class="text-primary">Rs 200</span>
+                                        </h5>
+                                        <small class="fst-italic">Idli served with coconut chutney, sambar and medu vada
+                                            on banana leaf, popular in South India</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>American Style Breakfast</span>
+                                            <span class="text-primary">Rs 250</span>
+                                        </h5>
+                                        <small class="fst-italic">American breakfast is one of the most famous breakfast
+                                            dishes which consists of bacon, fried egg, sausage, mushrooms, baked beans,
+                                            toast, and grilled tomatoes.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>MO:MO - Chicken/ Buff /Veg</span>
+                                            <span class="text-primary">Rs 100</span>
+                                        </h5>
+                                        <small class="fst-italic">Momo is a type of steamed dumpling with some form of
+                                            filling, most commonly chicken or buff.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Burger- Ham /Chicken </span>
+                                            <span class="text-primary">Rs115/ Rs150 </span>
+                                        </h5>
+                                        <small class="fst-italic">A burger, is a sandwich consisting of fillings—usually
+                                            a patty of ground meat, typically beef—placed inside a sliced bun or bread
+                                            roll.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=692&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chowmein</span>
+                                            <span class="text-primary">Rs115</span>
+                                        </h5>
+                                        <small class="fst-italic">Chowmein is a Chinese dish made from stir-fried
+                                            noodles with vegetables and sometimes meat</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1658713064058-9ed13ce542e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chopsuey</span>
+                                            <span class="text-primary">Rs 250</span>
+                                        </h5>
+                                        <small class="fst-italic">Chopsuey is a dish in American Chinese cuisine and
+                                            other forms of overseas Chinese cuisine, consisting of meat and other
+                                            vegetables.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Pizza</span>
+                                            <span class="text-primary">Rs 300</span>
+                                        </h5>
+                                        <small class="fst-italic">Pizza is a dish of Italian origin consisting of a
+                                            usually round, flat base of leavened wheat-based dough topped with tomatoes,
+                                            cheese, and often various other ingredients </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Fried Rice</span>
+                                            <span class="text-primary">Rs 200</span>
+                                        </h5>
+                                        <small class="fst-italic">Fried rice is a dish of cooked rice that has been
+                                            stir-fried in a wok or a frying pan and is usually mixed with other
+                                            ingredients such as eggs, vegetables, seafood, or meat.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="data:image/jpeg;base64,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"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Nepali Dal-Bhat thali</span>
+                                            <span class="text-primary">Rs 350 </span>
+                                        </h5>
+                                        <small class="fst-italic">Dal bhat is often served with vegetable
+                                            tarkari or tarkari a mix of available seasonal vegetables and
+                                            sometimes meat as well.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dhindo_by_Ganesh.jpeg/220px-Dhindo_by_Ganesh.jpeg"
+                                        alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Nepali Dhedo</span>
+                                            <span class="text-primary">Rs 315</span>
+                                        </h5>
+                                        <small class="fst-italic">It is prepared by gradually adding flour to
+                                            boiling water while stirring</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Menu -->
+
+    <!-- Our Chefs and Staffs -->
+    <div class="container-xxl pb-3 mt-3 member">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="section-title ff-secondary text-center  fw-normal team-font">-----Team Members-----</h5>
+                <h1 class="mb-5 team-font">Our Chefs , Manager & Captain</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 card">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                                alt="">
+                        </div>
+                        <h5 class="mb-0">Chef Namaste</h5>
+                        <small>Chef</small>
+                        <div class="d-flex justify-content-center mt-3 mb-3">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 card">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                                alt="">
+                        </div>
+                        <h5 class="mb-0">Manager Dhanyabad</h5>
+                        <small>Manager</small>
+                        <div class="d-flex justify-content-center mt-3 mb-3">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 card">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                                alt="">
+                        </div>
+                        <h5 class="mb-0"> Jojolopaa</h5>
+                        <small>Executive-Manager</small>
+                        <div class="d-flex justify-content-center mt-3 mb-3">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 card">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                                alt="">
+                        </div>
+                        <h5 class="mb-0">Taremam</h5>
+                        <small>Captain</small>
+                        <div class="d-flex justify-content-center mt-3 mb-3">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END of chefs and staffs -->
+
+    <!-- Footer -->
+    <div class="container-fluid text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Bhatti The Restro</h4>
+                    <a class="btn btn-link link" href="">About Us</a>
+                    <a class="btn btn-link link" href="">Contact Us</a>
+                    <a class="btn btn-link link" href="">Review</a>
+                   
+                </div>
+                <div class="col">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Gongabu, Kathmandu</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+9876543210</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@terotauko.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                    <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                    <p>09AM - 09PM</p>
+                    <h5 class="text-light fw-normal">Sunday</h5>
+                    <p>10AM - 08PM</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a class="border-bottom link" href="#">Bhatti </a>, All Right Reserved. 
+                        
+                      
+                        Designed By <a class="border-bottom link" href="https://www.facebook.com/sudeep.shrestha.96" target="_blank">Sudeep</a><br><br>
+                       
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu link">
+                            <a href="">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
+
 </html>
