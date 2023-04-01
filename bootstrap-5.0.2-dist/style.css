@@ -5,6 +5,7 @@ body {
     rgba(97, 179, 235, 0.2),
     rgba(201, 81, 212, 0.2)
   );
+  
 }
 .navbar {
   background: linear-gradient(
@@ -71,3 +72,40 @@ img {
   text-decoration: none;
   font-weight: bolder;
 }
+.review .card {
+  box-shadow:0px 10px 10px rgba(0, 0, 0, 0.4);
+  height: 250px;
+  overflow: scroll;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.card::-webkit-scrollbar {
+  width: 20px;
+}
+.card::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+  
+.lead{
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
