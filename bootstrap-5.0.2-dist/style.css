@@ -7,13 +7,29 @@ body {
   );
   
 }
+.trans{
+  margin-top: -64px;
+}
 .navbar {
+  z-index: 99;
+  background: transparent !important;
+}
+.f-ont{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  
+}
+
+.font2{
+  color: brown;
+}
+/* .navbar {
   background: linear-gradient(
     to right,
     rgba(118, 119, 194, 0.5),
     rgba(64, 226, 172, 0.5)
   );
-}
+} */
 .tittle{
   background: linear-gradient( to right, rgb(14, 153, 56), orange ,rgb(143, 197, 15) );
   -webkit-background-clip: text;
@@ -22,7 +38,7 @@ body {
 img {
   object-fit: fit;
   object-position: center;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
   background-color: orange;
 }
