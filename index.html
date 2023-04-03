@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Great+Vibes&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 
 
 
@@ -27,7 +28,7 @@
     <div id="container" class="header finisher-header  " class=" container-xxl position-relative p-0 mt-3 ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-                <h1 class="tittle m-0"><i class="fa fa-utensils me-3"></i>Bhatti The Restro</h1>
+                <h1 class="tittle m-0 titt"><i class="fa fa-utensils me-3"></i>Bhatti The Restro</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -517,6 +518,87 @@
     </div>
     <!-- END of chefs and staffs -->
 
+    <!-- Start of Review  -->
+    <div class="container-1">
+        <div class="review">
+            <h2 class="team-font text-center">Our Review</h2>
+            <div class="review-text">
+                <div class="user-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p> We had Nepali thali and my friend had ostrich steak. Both dishes were great. We love the place
+                        and vibes. People here are friendly and eager to help anytime. We had wonderful dinner here.
+                        Thank you guys for making our last night dinner lovely.
+                    </p>
+                    <span>Anisha Shrestha</span>
+                </div>
+                <div class="user-text active-text">
+                    <i class="font fa-solid fa-quote-left"></i>
+                    <p> The staff are so lovely and friendly and the food was delicious. My partner had the stuffed
+                        chicken and raved about the quality. I had the paneer masala and it was a good sized portion and
+                        so tasty.
+                    </p>
+                    <span>Sudeep Shrestha</span>
+                </div>
+                <div class="user-text ">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p> This cafe is in a great spot. Used to be Rosemary Kitchen, which it also a great place. Lovely
+                        staff and really good food. The PANCAKES are DELICIOUS! Really nice if you want to sit outside
+                        and read a book, enjoy food without noise.
+                    </p>
+                    <span>Binita Chhantyal</span>
+                </div>
+                <div class="user-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p> After quite a hunt (don't rely on google maps) we found this place for my daughter's birthday.
+                        Very cool little place, quite different to everywhere we visited in Kathmandu. The welcome and
+                        service from the manager/waitress was very warm and friendly. All the food was spot on,
+                        particularly their buckwheat gallates and home made drinks. Only gripe would be the toilet could
+                        really use a major freshen up.
+                    </p>
+                    <span>Kaji Sunuwar</span>
+                </div>
+                <div class="user-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>
+                        An afternoon at this cozy eating place turned out well. Both the savoury and sweet crepe served
+                        were well presented and tasty. We had the mountain killer which was excellent. When in Kathmandu
+                        look for French Crepe. Enjoy.
+                    </p>
+                    <span>Naman Rimal</span>
+                </div>
+                <div class="user-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>
+                        Amazing food and experience.
+                        Amazing food, the Ambience is fantastic, friendly staff. A good experience overall. Thank you so
+                        much to everyone here and special thanks to bikash sir for serving us. Will definitely be here
+                        again. ❤️
+                    </p>
+                    <span>Heera Shrestha</span>
+                </div>
+                <div class="user-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Great spot, lively environment, Great and polite customer service staff, thank you vikas for your
+                        humble and great service.
+                    </p>
+                    <span>Shyam Gurung</span>
+                </div>
+            </div>
+            <div class="review-pic">
+                <img src="/assets/user1.jpeg" alt="" class="user-pic" onclick="showReview()">
+                <img src="/assets/user2.jpeg" alt="" class="user-pic active-pic" onclick="showReview()">
+                <img src="/assets/user3.jpeg" alt="" class="user-pic" onclick="showReview()">
+                <img src="/assets/user4.jpeg" alt="" class="user-pic" onclick="showReview()">
+                <img src="/assets/user5.jpeg" alt="" class="user-pic" onclick="showReview()">
+                <img src="/assets/user6.jpeg" alt="" class="user-pic" onclick="showReview()">
+                <img src="/assets/user7.jpeg" alt="" class="user-pic" onclick="showReview()">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- End of Review  -->
+
     <!-- Footer -->
     <div class="container-fluid text-light footer pt-5 mt-5">
         <div class="container py-5">
@@ -577,8 +659,24 @@
         </div>
     </div>
 
-    <script src="/bootstrap-5.0.2-dist/js/bootstrap.js">
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script>
+        let userTexts = document.getElementsByClassName("user-text");
+        let userPics = document.getElementsByClassName("user-pic");
 
+        function showReview() {
+            for (userPic of userPics) {
+                userPic.classList.remove("active-pic");
+            }
+            for (userText of userTexts) {
+                userText.classList.remove("active-text");
+
+            }
+            let i = Array.from(userPics).indexOf(event.target);
+
+            userPics[i].classList.add("active-pic");
+            userTexts[i].classList.add("active-text");
+        }
     </script>
 </body>
 
